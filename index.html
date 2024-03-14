@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <!--Navigation Bar-->
+
+    <nav class="navbar">
+        <!--Toggle Button-->
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        
+
+        <ul class="nav-list" id="nav-list">
+            <li><a href="tel:+1-833-998-0045">Enterprise</a></li>
+            <li><a href="tel:+1-833-998-0045">Reservation</a></li>
+            <li><a href="tel:+1-833-998-0045">Changes</a></li>
+            <li><a href="tel:+1-833-998-0045">Cancellation</a></li>
+            <li><a href="tel:+1-833-998-0045">Contacts</a></li>
+        </ul>
+    </nav>
+
+
+
+            <div class="content">
+                <div class="container">
+                    <div class="card">
+                        <h1 class="heading">Sorry for the Detour</h1>
+                        <p class="subheading">We’d love to help find the right Car & Solution for you, But Due To Website Maintenance we’re only available On Call at this time.Please call us at +1 (833) 998-0045 for any Car Shop, Sell & Trade.</p>
+                        <img class="car-image" alt="Car" src="download.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+
+                <p class="footer-copyright">
+                    ©<span id="footer-copyright-year"></span>
+                    VROOM. ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const currentYear = new Date().getFullYear();
+            document.getElementById("footer-copyright-year").innerHTML = currentYear;
+        </script>
+        <div class="toll-free-number">
+            <a href="tel:+1-833-998-0045">Call Now +1-833-998-0045</a>
+        </div>
+        <div class="calltel d-none d-md-block">
+            <a href="tel:+1-833-998-0045" class="phoneMe">
+                <img src="call-now.png" alt="Geeks Services" title="CallNow" />
+                <p>Call Now +1-833-998-0045</p>
+            </a>
+        </div>
+
+
+
+
+        <script src="index.js"></script>
+    </body>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+
+
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5e17462c7e39ea1242a3d567/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+})();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var navbarToggle = document.getElementById("navbar-toggle");
+    var navList = document.getElementById("nav-list");
+
+    navbarToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+
+   
+});
+
+
+
+
+
+
+</script>
+<!--End of Tawk.to Script-->
+</html>

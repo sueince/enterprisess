@@ -1,0 +1,308 @@
+
+body {
+    margin: 0;
+    background-image: url(https://www.enterprise.com/en/home/_jcr_content/root/container/container/container_933387721/image.coreimg.82.1920.png/1693919869947/img-2-3x-img-2-3x.png);
+}
+
+
+/* NavBar Styling */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #32a852;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 0px;
+    padding-left: 100px;
+}
+
+.nav-list li {
+    margin-right: 100px;
+    transition: background-color 0.3s ease;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #dbdfe0;
+    position: relative;
+}
+
+
+
+.nav-list a:hover {
+    background-color: #d8e2f0;
+    color: #000000;
+}
+
+
+
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 10px;
+    background-color: #ecf0f1;
+}
+
+/* Media query for responsive design */
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #32a852;
+        position: absolute;
+        top: 68px;
+        z-index: 1000;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 30px;
+
+    }
+
+}
+
+
+
+
+
+
+.header {
+    padding: 24px 48px;
+}
+
+.header-logo {
+    color: #fff;
+} 
+
+.content {
+    flex-grow: 1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.card {
+    padding: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #041022;
+}
+
+.heading {
+    width: 100%;
+    font-family: VroomSans, sans-serif;
+    font-size: 42px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.divider {
+    border-top: 1px solid #eee;
+}
+
+.subheading {
+    font-family: Calibre, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    margin-bottom: 48px;
+    margin-top: 0;
+}
+
+.car-image {
+    width: 280px;
+}
+
+.footer {
+    padding: 47px;
+    background-color: #041022;
+    
+}
+
+.footer-logo {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-copyright {
+    color: #fff;
+    font-family: Calibre, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 32px 16px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .car-image {
+        width: 180px;
+    }
+}
+
+/*----------section--------*/
+a.phoneMe {
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    display: block;
+    width: 270px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+a.phoneMe p {
+    background: green;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.calltel img {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: -12px;
+}
+
+.geeks-service-box {
+    border: 1px solid #ccc;
+    min-height: 360px;
+    margin-bottom: 15px;
+}
+
+/*----------end footer-section--------*/
+
+ @media (min-width: 768px) {
+    .toll-free-number {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .toll-free-number {
+        background-color: green;
+        color: #ffffff !important;
+        text-align: center;
+        padding: 5px 10px;
+        border-top: 1px solid green;
+        border-bottom: 1px solid green;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: block;
+        z-index: 999;
+        font-weight: 600;
+    }
+
+    .toll-free-number a {
+        color: #ffffff;
+        font-size: 19px;
+    }
+}
+
+ @media (min-width: 768px) {
+    .toll-free-number {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .toll-free-number {
+        background-color: green;
+        text-align: center;
+        padding: 5px 10px;
+        border-top: 1px solid green;
+        border-bottom: 1px solid green;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: block;
+        z-index: 999;
+    }
+
+    .toll-free-number a {
+        color: #fff;
+        font-size: 21px;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
